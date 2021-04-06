@@ -18,7 +18,9 @@ You can connect to one or more of these topics using fink-client's APIs and rece
 pip install fink-client
 ```
 
-Alerts are received "live", that is after Fink ingestion and processing (typically a few minutes delay after ZTF emits the alert). Follow the [documentation](https://github.com/astrolabsoftware/fink-client/blob/master/docs/livestream_manual.md) to know more on this!
+Livestream alerts are received "live", that is after Fink ingestion and processing (typically a few minutes delay after ZTF emits the alert). Follow the [documentation](https://github.com/astrolabsoftware/fink-client/blob/master/docs/livestream_manual.md) to know more on this!
+
+We suggest using livestreams for real-time follow-up coordination and analysis.
 
 <img src="topic_monitor.png" width=1000 />
 
@@ -30,7 +32,7 @@ Alerts are received "live", that is after Fink ingestion and processing (typical
 
 Fink proposes a web service to allow users to browse and display alert data collected and processed by Fink from a web browser. The Portal can be accessed from the [Fink website](https://fink-broker.org). 
 
-We pushed ZTF public alert data from 01 November 2019 to now. up to now, this represents more than 70 million alerts collected (>3 TB), and about 30 million processed (>1 TB). Alerts are aggregated by their objectId, and all alerts contain original ZTF information and Fink added values.
+We pushed ZTF public alert data from 01 November 2019 to now. This represents more than 70 million alerts collected (>3 TB), and about 30 million processed (>1 TB). Alerts are aggregated by their objectId, and all alerts contain original ZTF information and Fink added values.
 
 Data is updated once a day, after the observing night is over. There is no plan to support streaming updates to HBase, and if you want live information we can provide live Kafka streams instead.
 
@@ -48,7 +50,7 @@ Note that the next release will be based on Graph database to handle restlessly 
 
 Users can perform different types of search:
 
-- **Search by Object ID:** Enter a valid object ID to access its data
+- **Search by Object ID:** Enter a valid object ID to access its data.
 - **Conesearch:** Peform a conesearch around a position on the sky given by (RA, Dec, radius).
 - **Search by Date:** Choose a starting date and a time window to see all alerts in this period. Dates are in UTC, and the time window in minutes.
 - **Get latest 100 alerts by class:** Choose a class of interest using the dropdown menu to see the 100 latest alerts processed by Fink.
@@ -61,6 +63,8 @@ Users can perform different types of search:
 The scientific interest of the Fink community is wide: supernovae, microlensing, multi-messenger astronomy, solar system objects... and it is difficult to give all information in one page for everyone. Hence, we developed views to explore particular aspect of each alert. By default, you will have a summary view of the object (cutouts, lightcurve, some textual information...). Then you can click on different tabs that will show different information based on a science topic: supernovae (e.g. classification score evolution), variable stars (fit using gatspy), microlensing (fit using pyLIMA), solar system object ...
 
 <img src="view.png" width=1000 />
+
+**Anais suggests to add or a link to an object to show off the views or at least a second view image**.
 
 #### Feedback
 
