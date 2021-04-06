@@ -6,10 +6,10 @@ This repository contains materials (notebooks & presentation) to explore the [Fi
 
 The repository contains a number of notebooks focusing on the use of the Science Portal API. We shortly present different science cases:
 
-- Extragalactic science: AGN & supernovae ([open in colab]())
-- Galactic science: variable stars & microlensing ([open in colab]())
-- Solar system science: asteroids, comets & space debris ([open in colab]())
-- Multi-messenger astronomy: searching for kilonovae ([open in colab]())
+- Extragalactic science: AGN & supernovae [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+- Galactic science: variable stars & microlensing [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+- Solar system science: asteroids, comets & space debris [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+- Multi-messenger astronomy: searching for kilonovae [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
 - Broker interfaces: presentation on the livestream service, the Science Portal and its API, and the Fink TOM module ([read the presentation]())
 
 
