@@ -14,6 +14,7 @@ The repository contains a number of notebooks focusing on the use of the Fink RE
 - Multi-messenger astronomy: searching for kilonovae ([see notebook](MMA/MMA.ipynb))
 - Broker interfaces: presentation on the livestream service, the Science Portal and its API, and the Fink TOM module ([see the presentation](interfaces/README.md))
 
+These sciences are not exhaustive and we welcome new collaborations to expand them!
 
 You can try the notebooks using Google Colab (follow the link above). You can also clone the repo, and try it locally (very little external libraries are required). We also provide a Dockerfile to work in a contained environment.
 
