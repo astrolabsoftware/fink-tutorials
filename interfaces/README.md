@@ -22,7 +22,7 @@ Livestream alerts are received "live", that is after Fink ingestion and processi
 
 We suggest using livestreams for real-time follow-up coordination and analysis.
 
-<img src="topic_monitor.png" width=1000 />
+<img src="topic_monitor.png" width=1000 /> <br />
 
 ## Science Portal / REST API
 
@@ -36,7 +36,7 @@ We pushed ZTF public alert data from 01 November 2019 to now. This represents mo
 
 Data is updated once a day, after the observing night is over. There is no plan to support streaming updates to HBase, and if you want live information we can provide live Kafka streams instead.
 
-<img src="home.png" width=1000 />
+<img src="home.png" width=1000 /> <br />
 
 #### Searching the database
 
@@ -54,33 +54,36 @@ Users can perform different types of search:
 - **Conesearch:** Peform a conesearch around a position on the sky given by (RA, Dec, radius).
 - **Search by Date:** Choose a starting date and a time window to see all alerts in this period. Dates are in UTC, and the time window in minutes.
 - **Get latest 100 alerts by class:** Choose a class of interest using the dropdown menu to see the 100 latest alerts processed by Fink.
-- **Solar System Object search:** Enter the number of a known Solar System object from the MPC to get its information by Fink.
+- **Solar System Object search:** Enter the number of a known Solar System object from the [Minor Planet Center (MPC)](https://minorplanetcenter.net/) to get its information by Fink.
+
+
 
 <img src="search.png" width=1000 />
-_Fink search bar_
+<em>Figure 1: Fink search bar</em>   <br />  <br /> <br /> <br />
 
 You will have then a table with your results, but also a skymap with all the query results!
 
+
 <img src="table.png" width=1000 />
-_Table of results_
+<em>Figure 2: Table of results</em>  <br />  <br /> <br /> <br />
 
 
-<img src="skymap.png" width=1000 />
-_Skymap_
+<img src="skymap.png" width=1000 /> 
+<em>Figure 3: Skymap</em> <br />  <br /> <br /> <br />
 
 
 #### The power of the views!
 
-The scientific interest of the Fink community is wide: supernovae, microlensing, multi-messenger astronomy, solar system objects... and it is difficult to give all information in one page for everyone. Hence, we developed views to explore particular aspect of each alert. By default, you will have a summary view of the object (cutouts, lightcurve, some textual information...). Then you can click on different tabs that will show different information based on a science topic: supernovae (e.g. classification score evolution), variable stars (fit using gatspy), microlensing (fit using pyLIMA), solar system object ...
+The scientific interest of the Fink community is wide: supernovae, microlensing, multi-messenger astronomy, solar system objects... and it is difficult to give all information in one page for everyone. Hence, we developed views to explore particular aspects of each alert. By default, you will have a summary view of the object (cutouts, lightcurve, some textual information...). Then you can click on different tabs that will show different information based on a science topic: supernovae (e.g. classification score evolution), variable stars (fit using gatspy), microlensing (fit using pyLIMA), solar system object ...
 
-<img src="view.png" width=1000 />
-_Summary view_
+<img src="view.png" width=1000 /> 
+<em>Figure 4: Summary view</em>  <br />  <br /> <br /> <br />
 
 <img src="sn_view.png" width=1000 />
-_Supernova view_
+<em>Figure 5: Supernova view</em>  <br />  <br /> <br /> <br />
 
 <img src="sso_view.png" width=1000 />
-_Solar System Object view_
+<em>Figure 6: Solar System Object view</em>  <br />  <br /> <br /> <br />
 
 #### Feedback
 
@@ -92,7 +95,7 @@ This first version of the Portal contains only limited features, but it is extre
 - What could be improved? (documentation, display, ...)
 - What would you like to have? (new views, different information inside a view, ...)
 
-We encourage users to send their feedback to the team (#scienceportal channel in the Fink Slack workspace, or in the [bug tracker](https://github.com/astrolabsoftware/fink-science-portal/issues), or by email at [contact@fink-broker.org](mailto:contact@fink-broker.org)). 
+We encourage users to send their feedback to the team (#scienceportal channel either in the Fink Slack workspace, in the [bug tracker](https://github.com/astrolabsoftware/fink-science-portal/issues), or by email to [contact@fink-broker.org](mailto:contact@fink-broker.org)). 
 
 
 ### REST API
@@ -101,7 +104,7 @@ The science portal is built on a REST API which is available to users as well. Y
 
 ## TOM module
 
-We also provide a TOM module for Fink. You can enable it in your TOM by simply installing it:
+We also provide a [TOM](https://lco.global/tomtoolkit/) module for Fink. You can enable it in your TOM by simply installing it:
 
 ```bash
 pip install tom-fink
@@ -116,9 +119,9 @@ As of version 0.2, the module simply uses the Fink REST API to retrieve alerts. 
 - Search by Solar System name
 
 <img src="tom_button.png" width=1000 />
-_Fink button should appear in the list of broker_
+<em>Figure 7: Fink button should appear in the list of broker</em> <br />  <br /> <br /> <br />
 
 <img src="tom_form.png" width=1000 />
-_Fink form contains all API features_
+<em>Figure 8: Fink form contains all API features</em> <br />  <br /> <br />
 
 More information at [https://github.com/TOMToolkit/tom_fink](https://github.com/TOMToolkit/tom_fink)
