@@ -59,31 +59,31 @@ Users can perform different types of search:
 
 
 <img src="search.png" width=1000 />
-<em>Figure 1: Fink search bar<em>   <br />  <br /> <br /> <br />
+<em>Figure 1: Fink search bar</em>   <br />  <br /> <br /> <br />
 
 You will have then a table with your results, but also a skymap with all the query results!
 
 
 <img src="table.png" width=1000 />
-*Figure 2: Table of results*  
+<em>Figure 2: Table of results</em>  <br />  <br /> <br /> <br />
 
 
-<img src="skymap.png" width=1000 />
-*Figure : Skymap*  
+<img src="skymap.png" width=1000 /> <br />  <br /> <br /> <br />
+<em>Figure : Skymap</em>
 
 
 #### The power of the views!
 
 The scientific interest of the Fink community is wide: supernovae, microlensing, multi-messenger astronomy, solar system objects... and it is difficult to give all information in one page for everyone. Hence, we developed views to explore particular aspects of each alert. By default, you will have a summary view of the object (cutouts, lightcurve, some textual information...). Then you can click on different tabs that will show different information based on a science topic: supernovae (e.g. classification score evolution), variable stars (fit using gatspy), microlensing (fit using pyLIMA), solar system object ...
 
-<img src="view.png" width=1000 />
-_Summary view_
+<img src="view.png" width=1000 /> 
+<em>Summary view</em>  <br />  <br /> <br /> <br />
 
 <img src="sn_view.png" width=1000 />
-_Supernova view_
+<em>Supernova view</em>  <br />  <br /> <br /> <br />
 
 <img src="sso_view.png" width=1000 />
-_Solar System Object view_
+<em>Solar System Object view</em>  <br />  <br /> <br /> <br />
 
 #### Feedback
 
