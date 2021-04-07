@@ -54,24 +54,27 @@ Users can perform different types of search:
 - **Conesearch:** Peform a conesearch around a position on the sky given by (RA, Dec, radius).
 - **Search by Date:** Choose a starting date and a time window to see all alerts in this period. Dates are in UTC, and the time window in minutes.
 - **Get latest 100 alerts by class:** Choose a class of interest using the dropdown menu to see the 100 latest alerts processed by Fink.
-- **Solar System Object search:** Enter the number of a known Solar System object from the MPC to get its information by Fink.
+- **Solar System Object search:** Enter the number of a known Solar System object from the [Minor Planet Center (MPC)](https://minorplanetcenter.net/) to get its information by Fink.
+
+
 
 <img src="search.png" width=1000 />
-_Fink search bar_
+*Figure 1: Fink search bar*  
 
 You will have then a table with your results, but also a skymap with all the query results!
 
+
 <img src="table.png" width=1000 />
-_Table of results_
+*Figure 2: Table of results*  
 
 
 <img src="skymap.png" width=1000 />
-_Skymap_
+*Figure : Skymap*  
 
 
 #### The power of the views!
 
-The scientific interest of the Fink community is wide: supernovae, microlensing, multi-messenger astronomy, solar system objects... and it is difficult to give all information in one page for everyone. Hence, we developed views to explore particular aspect of each alert. By default, you will have a summary view of the object (cutouts, lightcurve, some textual information...). Then you can click on different tabs that will show different information based on a science topic: supernovae (e.g. classification score evolution), variable stars (fit using gatspy), microlensing (fit using pyLIMA), solar system object ...
+The scientific interest of the Fink community is wide: supernovae, microlensing, multi-messenger astronomy, solar system objects... and it is difficult to give all information in one page for everyone. Hence, we developed views to explore particular aspects of each alert. By default, you will have a summary view of the object (cutouts, lightcurve, some textual information...). Then you can click on different tabs that will show different information based on a science topic: supernovae (e.g. classification score evolution), variable stars (fit using gatspy), microlensing (fit using pyLIMA), solar system object ...
 
 <img src="view.png" width=1000 />
 _Summary view_
@@ -92,7 +95,7 @@ This first version of the Portal contains only limited features, but it is extre
 - What could be improved? (documentation, display, ...)
 - What would you like to have? (new views, different information inside a view, ...)
 
-We encourage users to send their feedback to the team (#scienceportal channel in the Fink Slack workspace, or in the [bug tracker](https://github.com/astrolabsoftware/fink-science-portal/issues), or by email at [contact@fink-broker.org](mailto:contact@fink-broker.org)). 
+We encourage users to send their feedback to the team (#scienceportal channel either in the Fink Slack workspace, in the [bug tracker](https://github.com/astrolabsoftware/fink-science-portal/issues), or by email to [contact@fink-broker.org](mailto:contact@fink-broker.org)). 
 
 
 ### REST API
