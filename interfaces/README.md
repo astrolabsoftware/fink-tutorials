@@ -104,7 +104,7 @@ The science portal is built on a REST API which is available to users as well. Y
 
 ## TOM module
 
-We also provide a TOM module for Fink. You can enable it in your TOM by simply installing it:
+We also provide a [TOM](https://lco.global/tomtoolkit/) module for Fink. You can enable it in your TOM by simply installing it:
 
 ```bash
 pip install tom-fink
