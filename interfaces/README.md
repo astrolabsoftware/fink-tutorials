@@ -60,6 +60,8 @@ Users can perform different types of search:
 
 <img src="search.png" width=1000 />
 *Figure 1: Fink search bar*  
+&nbsp;
+&nbsp;
 
 You will have then a table with your results, but also a skymap with all the query results!
 
