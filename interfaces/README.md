@@ -68,8 +68,8 @@ You will have then a table with your results, but also a skymap with all the que
 <em>Figure 2: Table of results</em>  <br />  <br /> <br /> <br />
 
 
-<img src="skymap.png" width=1000 /> <br />  <br /> <br /> <br />
-<em>Figure : Skymap</em>
+<img src="skymap.png" width=1000 /> 
+<em>Figure : Skymap</em> <br />  <br /> <br /> <br />
 
 
 #### The power of the views!
@@ -77,13 +77,13 @@ You will have then a table with your results, but also a skymap with all the que
 The scientific interest of the Fink community is wide: supernovae, microlensing, multi-messenger astronomy, solar system objects... and it is difficult to give all information in one page for everyone. Hence, we developed views to explore particular aspects of each alert. By default, you will have a summary view of the object (cutouts, lightcurve, some textual information...). Then you can click on different tabs that will show different information based on a science topic: supernovae (e.g. classification score evolution), variable stars (fit using gatspy), microlensing (fit using pyLIMA), solar system object ...
 
 <img src="view.png" width=1000 /> 
-<em>Summary view</em>  <br />  <br /> <br /> <br />
+<em>Figure 4: Summary view</em>  <br />  <br /> <br /> <br />
 
 <img src="sn_view.png" width=1000 />
-<em>Supernova view</em>  <br />  <br /> <br /> <br />
+<em>Figure 5: Supernova view</em>  <br />  <br /> <br /> <br />
 
 <img src="sso_view.png" width=1000 />
-<em>Solar System Object view</em>  <br />  <br /> <br /> <br />
+<em>Figure 6: Solar System Object view</em>  <br />  <br /> <br /> <br />
 
 #### Feedback
 
@@ -119,9 +119,9 @@ As of version 0.2, the module simply uses the Fink REST API to retrieve alerts. 
 - Search by Solar System name
 
 <img src="tom_button.png" width=1000 />
-_Fink button should appear in the list of broker_
+<em>Figure 7: Fink button should appear in the list of broker</em> <br />  <br /> <br /> <br />
 
 <img src="tom_form.png" width=1000 />
-_Fink form contains all API features_
+<em>Figure 8: Fink form contains all API features</em> <br />  <br /> <br /> <br />
 
 More information at [https://github.com/TOMToolkit/tom_fink](https://github.com/TOMToolkit/tom_fink)
