@@ -22,7 +22,7 @@ Livestream alerts are received "live", that is after Fink ingestion and processi
 
 We suggest using livestreams for real-time follow-up coordination and analysis.
 
-<img src="topic_monitor.png" width=1000 />
+<img src="topic_monitor.png" width=1000 /> <br />
 
 ## Science Portal / REST API
 
@@ -36,7 +36,7 @@ We pushed ZTF public alert data from 01 November 2019 to now. This represents mo
 
 Data is updated once a day, after the observing night is over. There is no plan to support streaming updates to HBase, and if you want live information we can provide live Kafka streams instead.
 
-<img src="home.png" width=1000 />
+<img src="home.png" width=1000 /> <br />
 
 #### Searching the database
 
@@ -69,7 +69,7 @@ You will have then a table with your results, but also a skymap with all the que
 
 
 <img src="skymap.png" width=1000 /> 
-<em>Figure : Skymap</em> <br />  <br /> <br /> <br />
+<em>Figure 3: Skymap</em> <br />  <br /> <br /> <br />
 
 
 #### The power of the views!
@@ -122,6 +122,6 @@ As of version 0.2, the module simply uses the Fink REST API to retrieve alerts. 
 <em>Figure 7: Fink button should appear in the list of broker</em> <br />  <br /> <br /> <br />
 
 <img src="tom_form.png" width=1000 />
-<em>Figure 8: Fink form contains all API features</em> <br />  <br /> <br /> <br />
+<em>Figure 8: Fink form contains all API features</em> <br />  <br /> <br />
 
 More information at [https://github.com/TOMToolkit/tom_fink](https://github.com/TOMToolkit/tom_fink)
