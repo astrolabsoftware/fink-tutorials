@@ -1,0 +1,7 @@
+numpy
+pandas
+matplotlib
+gatspy
+fink-science
+seaborn
+pyLIMA
