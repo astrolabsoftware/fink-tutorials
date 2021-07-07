@@ -5,3 +5,4 @@ gatspy
 fink-science
 seaborn
 pyLIMA
+astropy

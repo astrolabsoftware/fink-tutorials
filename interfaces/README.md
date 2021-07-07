@@ -2,6 +2,8 @@
 
 We describe here all the ways to publicly access [Fink](https://fink-broker.org) data.
 
+<img src="infrastructure.png" width=1000 /> <br />
+
 ## Livestreams
 
 Fink distributes alerts via [Apache Kafka](https://kafka.apache.org/) topics based on one or several of the alert properties (label, classification, magnitude, ...). Topics are created via user-defined filters. You can connect to existing streams, or design your own filter to create a stream for your science need. We already have filters available for:
