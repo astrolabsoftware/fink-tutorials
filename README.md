@@ -16,7 +16,14 @@ The repository contains a number of notebooks focusing on the use of the Fink RE
 
 These sciences are not exhaustive and we welcome new collaborations to expand them!
 
-You can try the notebooks using Google Colab (follow the link above). You can also clone the repo, and try it locally (very little external libraries are required). We also provide a Dockerfile to work in a contained environment.
+You can try the notebooks using Google Colab (follow the link above). You can also clone the repo, and try it locally (very little external libraries are required). 
+
+We also provide a Singularity script to work in a contained environment (thanks @bregeon):
+
+- Build with `singularity build --fakeroot fink.sif Singularity`
+- Run with `singularity run fink.sif`
+- Open the link in your browser (even from the host)
+
 
 ## How to contribute
 
