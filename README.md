@@ -22,7 +22,7 @@ We also provide a Singularity script to work in a contained environment (thanks 
 
 - Build with `singularity build --fakeroot fink.sif Singularity`
 - Run with `singularity run fink.sif`
-- Open the link in your browser (even from the host)
+- Open the link in your browser (from the host)
 
 
 ## How to contribute
