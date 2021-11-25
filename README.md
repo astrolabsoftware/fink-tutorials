@@ -2,7 +2,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/astrolabsoftware/fink-notebook-template/blob/main)
 
-This repository contains materials (notebooks & presentation) to explore the [Fink broker](https://fink-broker.org) alert data. As of April 2021, Fink has collected more than 80 million alerts from the ZTF public stream, and processed more than 30 millions (after quality cuts). Among these, you will find extragalatic sources (supernovae, AGN, ...), galactic sources (many classes of transients incl. variables stars from our galaxy or gravitational microlensing events, ...) and moving objects from our Solar System (asteroids, comets, and made-man objects like space-debris!). Some sources are already confirmed, many are candidates!
+This repository contains materials (notebooks & presentation) to explore the [Fink broker](https://fink-broker.org) alert data. As of November 2021, Fink has collected more than 120 million alerts from the ZTF public stream, and processed more than 40 millions (after quality cuts). Among these, you will find extragalatic sources (supernovae, AGN, ...), galactic sources (many classes of transients incl. variables stars from our galaxy or gravitational microlensing events, ...) and moving objects from our Solar System (asteroids, comets, and made-man objects like space-debris!). Some sources are already confirmed, many are candidates!
 
 ## Materials
 
@@ -15,9 +15,11 @@ The repository contains a number of notebooks focusing on the use of the Fink RE
 - Multi-messenger astronomy: correlating with gravitational waves sky maps ([see notebook](MMA/gravitational_waves.ipynb))
 - Broker interfaces: presentation on the livestream service, the Science Portal and its API, and the Fink TOM module ([see the presentation](interfaces/README.md))
 
-These sciences are not exhaustive and we welcome new collaborations to expand them!
+These sciences are not exhaustive and we welcome new collaborations to expand them! In addition, there are notebooks focusing on other specific aspects:
 
-You can try the notebooks using Google Colab (follow the link above). You can also clone the repo, and try it locally (very little external libraries are required). 
+- How to tune the output rate of a Fink filter? Example for the Early SN Ia candidate filter ([see notebook](extragalactic/tuning_snia_output_rate.ipynb))
+
+You can try the notebooks using Google Colab (follow the link above). You can also clone the repo, and try it locally (very little external libraries are required).
 
 We also provide a Singularity script to work in a contained environment (thanks @bregeon):
 
