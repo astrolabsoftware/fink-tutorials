@@ -11,6 +11,7 @@ The repository contains a number of notebooks focusing on the use of the Fink RE
 - Extragalactic science: AGN & supernovae ([see notebook](extragalactic/extragalactic.ipynb))
 - Galactic science: variable stars & microlensing ([see notebook](galactic/galactic.ipynb))
 - Solar system science: asteroids, comets & space debris ([see notebook](sso/sso.ipynb))
+- Solar system science: phase curves ([see notebook](sso/fink_sso_imcce.ipynb))
 - Multi-messenger astronomy: searching for kilonovae ([see notebook](MMA/MMA.ipynb))
 - Multi-messenger astronomy: correlating with gravitational waves sky maps ([see notebook](MMA/gravitational_waves.ipynb))
 - Broker interfaces: presentation on the livestream service, the Science Portal and its API, and the Fink TOM module ([see the presentation](interfaces/README.md))
