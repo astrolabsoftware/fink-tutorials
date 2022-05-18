@@ -34,8 +34,8 @@ def poll_single_alert(myconfig, topics) -> None:
             # post to slack
             slacktxt = 'https://fink-portal.org/{}'.format(alert['objectId'])
             slacktxt = '{} \n '.format(alert['timestamp']) + slacktxt
-            print(os.environ['FINKWEBHOOK'], topic)
-            r = requests.post(
+
+            requests.post(
                 os.environ['FINKWEBHOOK'],
                 json={'text': slacktxt, "username": "Fink {}".format(topic)},
                 headers={'Content-Type': 'application/json'}
