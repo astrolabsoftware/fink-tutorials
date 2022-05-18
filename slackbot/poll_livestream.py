@@ -13,7 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """ Poll the Fink servers only once at a time """
-import sys, os
+import sys
+import os
 import requests
 from fink_client.consumer import AlertConsumer
 
