@@ -41,7 +41,6 @@ def poll_single_alert(myconfig, topics) -> None:
                 json={'text': slacktxt, "username": "Fink {}".format(topic)},
                 headers={'Content-Type': 'application/json'}
             )
-            # print(slacktxt)
         else:
             print(
                 'No alerts received in the last {} seconds'.format(
