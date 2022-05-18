@@ -55,7 +55,7 @@ With recent Mac, you have to give the Full Disk Access permissions to cron:
 Alternatively, you can get alerts as they come. For this, you need to register to the [livestream service](https://fink-broker.readthedocs.io/en/latest/fink-client/). Once you have your credentials, adapt the provided `poll_livestream.py` script, and launch it in the background using:
 
 ```bash
-nohup poll_livestream.py >> poll_livestream.log 2>&1 &
+nohup python poll_livestream.py > poll_livestream.log 2>&1 &
 ```
 
 If you want to stop listening, just kill the process:
@@ -63,5 +63,9 @@ If you want to stop listening, just kill the process:
 ```bash
 ps aux | grep poll_livestream
 # read the PID
-kill $PID
+kill -9 $PID
 ```
+
+## Troubleshooting
+
+When using the livestream service, if you constantly get no alerts while you are sure with your credentials, means you are probably behind a firewall (especially if you are connected to the eduroam wifi). Try to change for a cabled connection, or use a VPN. My favourite is [sshuttle](https://github.com/sshuttle/sshuttle)!
