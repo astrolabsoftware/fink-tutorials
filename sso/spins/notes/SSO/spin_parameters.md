@@ -9,7 +9,8 @@ The observed magnitude of asteroids is the sum of various contributions. Some ar
 !!! danger Todo/Questions
 - [x] Use a software to compute ephemerides instead of the Miriade API (too many timeouts)
 - [ ] Understand better the bimodal distributions for $\alpha_0$
-- [ ] Redo the analysis with a per-band granularity?
+- [ ] Redo the analysis with a per-band granularity
+- [ ] Use H_g - H_r to predict a C/S taxonomy (a la Sergeyev2022)
 !!!
 
 ## Phase curve
@@ -26,7 +27,7 @@ where $H$ is the absolute magnitude, $m_{obs}$ is the observed magnitude (typica
 
 ## HG1G2 extension
 
-There have been some efforts to extend the previous definition (e.g. Malhke et al XX):
+There have been some efforts to extend the previous definition (e.g. Mahlke et al 2021):
 
 $$
 \begin{equation}
