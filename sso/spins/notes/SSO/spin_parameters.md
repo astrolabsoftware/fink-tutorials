@@ -27,7 +27,7 @@ where $H$ is the absolute magnitude, $m_{obs}$ is the observed magnitude (typica
 
 ## HG1G2 extension
 
-There have been some efforts to extend the previous definition (e.g. Mahlke et al 2021):
+There have been some efforts to extend the previous definition (e.g. Muinonen et al 2010):
 
 $$
 \begin{equation}
@@ -35,7 +35,10 @@ H = m_{obs} + f(distance) + h(\alpha, G_1, G_2)
 \end{equation}
 $$
 
-where this time the phase slope has two components, $G_1$ and $G_2$, with the condition $G_1 + G2 < 1$.
+where this time the phase slope has two components, $G_1$ and $G_2$, with the conditions:
+- $G_1 + G2 <= 1$.
+- $G_1 >=0 $
+- $G_2 >=0 $
 
 ## Spin extension
 
@@ -55,9 +58,9 @@ s(R, \alpha_0, \delta_0) = -2.5 \log \Big[ 1 - (1 - R) ( \sin{\delta} \sin{\delt
 \end{align}
 $$
 
-with $R$, the oblateness of the object, defined as the ratio between the diameter at the pole and the diameter at the equator: $R = D_p / D_e$, $(\alpha, \delta)$ are the RA and Dec of the object, and $(\alpha_0, \delta_0)$ are the ecliptical longitude and latitude of the pole, respectively.
+with $R$, the oblateness of the object, defined as the ratio between the diameter at the pole and the diameter at the equator: $R = D_p / D_e$, $(\alpha, \delta)$ are the RA and Dec of the object, and $(\alpha_0, \delta_0)$ are the RA and Dec of the pole, respectively.
 
-### Circular case
+### Spherical case
 
 One can see that in the case of $R=1$ (circular object), the Eq. 3 reduces back the HG1G2 case (Eq. 2).
 
@@ -114,7 +117,7 @@ By construction, there is no overlap between the three samples.
 
 
 ![chi2.png](../_resources/chi2.png)
-_Distribution of $\chi^2_{red} = \chi^2 / dof$ for the different samples described below._
+_Distribution of $\chi^2_{red} = \chi^2 / \textrm{dof}$ for the different samples described below._
 
 ### Basic statistics
 
@@ -150,7 +153,7 @@ _[Left] Correlation between the absolute magnitude taken from the BFT (Johnson V
 
 Let's use the basic method, where we use all data available for each object, and let's look at the estimated parameters. 
 
-#### Ecliptical longitude of the pole $\alpha_0$
+#### Equatorial RA of the pole $\alpha_0$
 
 
 
