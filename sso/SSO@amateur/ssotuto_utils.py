@@ -11,8 +11,18 @@ import astropy.units as u
 import requests
 
 
-def plot_traj(pdf, id):
-    ff_pdf = pdf[pdf["d:ssoCandId"] == id]
+def plot_traj(pdf: pd.DataFrame, id: str):
+    """
+    Plot trajectories with ra,dec coordinates
+
+    Parameters
+    ----------
+    pdf : pd.DataFrame
+        dataframe containing the trajectories observations
+    id : str
+        the id of the trajectory to plot
+    """
+    ff_pdf = pdf[pdf["d:ssoCandId"] == id].sort_values("d:jd")
     fig = plt.figure()
     plt.scatter(ff_pdf["d:ra"], ff_pdf["d:dec"])
     plt.title(f"{id} sky trajectory")
@@ -21,8 +31,18 @@ def plot_traj(pdf, id):
     plt.show()
 
 
-def plot_lc(pdf, id):
-    ff_pdf = pdf[pdf["d:ssoCandId"] == id]
+def plot_lc(pdf: pd.DataFrame, id: str):
+    """
+    Plot the lightcurve of the trajectory
+
+    Parameters
+    ----------
+    pdf : pd.DataFrame
+        dataframe containing the trajectories observations
+    id : str
+        the id of the trajectory to plot
+    """
+    ff_pdf = pdf[pdf["d:ssoCandId"] == id].sort_values("d:jd")
     fig = plt.figure()
     filt_label = {
         1: "g band",
@@ -31,21 +51,22 @@ def plot_lc(pdf, id):
     for filt in ff_pdf["d:fid"].unique():
         filt_mask = ff_pdf["d:fid"] == filt
         plt.errorbar(
-            ff_pdf[filt_mask]["d:jd"], 
+            Time(ff_pdf[filt_mask]["d:jd"], format="jd").to_datetime(), 
             ff_pdf[filt_mask]["d:magpsf"],
             yerr=ff_pdf[filt_mask]["d:sigmapsf"],
             linestyle="",
             marker="o",
             label=filt_label[filt]
         )
+    plt.xticks(rotation=45, ha='right')
     plt.title(f"{id} lighcurve")
     plt.legend()
-    plt.xlabel("right ascension (degree)")
-    plt.ylabel("declination (degree)")
+    plt.xlabel("time (days in julian date)")
+    plt.ylabel("apparent magnitude")
     plt.show()
 
 # ==== Ephemeries with Miriade
-def write_target_json(orb_list):
+def write_target_json(orb_list: list) -> io.BytesIO:
 
     dict_param = dict()
     dict_param["type"] = "Asteroid"
@@ -206,7 +227,7 @@ def plot_perf_ephem(pdf_orb: pd.DataFrame, pdf_lc: pd.DataFrame, ff_id: str, met
 
     ephem_residuals = ephemeries(
         tmp_orb, 
-        times=Time(tmp_lc["d:jd"].values, format="jd"),
+        times=Time(tmp_lc["d:jd"].values + 15/3600/24, format="jd"),
         method=method
     ).reset_index().sort_values("Date")
 
@@ -244,7 +265,7 @@ def plot_perf_ephem(pdf_orb: pd.DataFrame, pdf_lc: pd.DataFrame, ff_id: str, met
 
     axins = ax.inset_axes([0.2, 0.2, 0.45, 0.45])
 
-    axins.plot(deltaRAcosDEC, deltaDEC, ls="", color=colors[0], marker="x")
+    axins.scatter(deltaRAcosDEC, deltaDEC, c=tmp_lc["d:jd"].values, marker="x")
     axins.errorbar(
         np.mean(deltaRAcosDEC),
         np.mean(deltaDEC),
