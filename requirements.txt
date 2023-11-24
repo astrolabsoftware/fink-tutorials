@@ -7,3 +7,4 @@ seaborn
 pyLIMA
 astropy
 jupyter
+healpy
