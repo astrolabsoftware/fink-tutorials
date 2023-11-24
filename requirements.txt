@@ -4,7 +4,7 @@ matplotlib
 gatspy
 fink-science
 seaborn
-pyLIMA
+pyLIMA==0.8.3
 astropy
 jupyter
 healpy
