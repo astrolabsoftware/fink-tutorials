@@ -95,6 +95,7 @@ qtconsole==5.4.4
 QtPy==2.4.1
 requests==2.31.0
 rich==13.7.0
+rise==5.7.1
 sbpy==0.3.0
 scipy==1.7.3
 SecretStorage==3.3.3
