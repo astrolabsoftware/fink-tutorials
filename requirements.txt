@@ -6,3 +6,4 @@ fink-science
 seaborn
 pyLIMA
 astropy
+jupyter
