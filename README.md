@@ -2,7 +2,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/astrolabsoftware/fink-notebook-template/blob/main)
 
-This repository contains materials (notebooks & presentation) to explore the [Fink broker](https://fink-broker.org) alert data. As of November 2021, Fink has collected more than 120 million alerts from the ZTF public stream, and processed more than 40 millions (after quality cuts). Among these, you will find extragalatic sources (supernovae, AGN, ...), galactic sources (many classes of transients incl. variables stars from our galaxy or gravitational microlensing events, ...) and moving objects from our Solar System (asteroids, comets, and made-man objects like space-debris!). Some sources are already confirmed, many are candidates!
+This repository contains materials (notebooks & presentation) to explore the [Fink broker](https://fink-broker.org) alert data. As of November 2024, Fink has processed more than 180 millions alerts from the ZTF public alert stream. Among these, you will find extragalatic sources (supernovae, AGN, ...), galactic sources (many classes of transients incl. variables stars from our galaxy or gravitational microlensing events, ...) and moving objects from our Solar System (asteroids, comets, and made-man objects like space-debris!). Some sources are already confirmed, many are candidates!
 
 ## Materials
 
@@ -20,7 +20,18 @@ These sciences are not exhaustive and we welcome new collaborations to expand th
 
 - How to tune the output rate of a Fink filter? Example for the Early SN Ia candidate filter ([see notebook](extragalactic/tuning_snia_output_rate.ipynb))
 
-You can try the notebooks using Google Colab (follow the link above). You can also clone the repo, and try it locally (very little external libraries are required).
+You can try the notebooks using Google Colab (follow the link above). You can also clone the repo, and try it locally. Most notebooks will work with any Python verson higher than 3.5, except the one on [microlensing](galactic/galactic.ipynb) which requires Python < 3.12 due to dependencies. We advise to work on a virtual environment:
+
+```
+python -m venv myenv
+source myenv/bin/activate
+
+pip install -r requirements.txt
+# ... wait a bit
+
+jupyter-notebook
+# play with notebooks
+```
 
 We also provide a Singularity script to work in a contained environment (thanks @bregeon):
 

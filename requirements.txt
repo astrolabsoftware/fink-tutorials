@@ -11,3 +11,5 @@ healpy
 pyarrow
 bokeh<3
 fink-utils
+requests
+sbpy
