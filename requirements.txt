@@ -11,3 +11,4 @@ bokeh<3
 fink-utils
 requests
 sbpy
+scipy
