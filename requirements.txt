@@ -2,7 +2,6 @@ numpy
 pandas
 matplotlib
 gatspy
-fink-science
 seaborn
 astropy
 jupyter
