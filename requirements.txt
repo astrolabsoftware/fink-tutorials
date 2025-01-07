@@ -2,12 +2,13 @@ numpy
 pandas
 matplotlib
 gatspy
-fink-science
 seaborn
-pyLIMA==0.8.3
 astropy
 jupyter
 healpy
 pyarrow
 bokeh<3
 fink-utils
+requests
+sbpy
+scipy
