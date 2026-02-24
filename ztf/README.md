@@ -6,12 +6,21 @@ This repository contains materials (notebooks & presentation) to explore the [Fi
 
 ## Materials
 
-The repository contains a number of notebooks focusing on the use of the Fink REST API for two different surveys: LSST and ZTF. 
-- LSST: The Vera C. Rubin Legacy Survey of Space and Time. Fink is one of the Fink Community Brokers processing LSST data from 2026.
-- ZTF: Zwicky Transient Facility. Fink has been processing data from ZTF since November 2019.
+The repository contains a number of notebooks focusing on the use of the Fink REST API. We shortly present different science cases:
 
+- Extragalactic science: AGN & supernovae ([see notebook](extragalactic/extragalactic.ipynb))
+- Galactic science: variable stars & microlensing ([see notebook](galactic/galactic.ipynb))
+- Solar system science: asteroids, comets & space debris ([see notebook](sso/sso.ipynb))
+- Solar system science: phase curves ([see notebook](sso/fink_sso_imcce.ipynb))
+- Multi-messenger astronomy: searching for kilonovae ([see notebook](MMA/MMA.ipynb))
+- Multi-messenger astronomy: correlating with gravitational waves sky maps ([see notebook](MMA/gravitational_waves.ipynb))
+- Broker interfaces: presentation on the livestream service, the Science Portal and its API, and the Fink TOM module ([see the presentation](interfaces/README.md))
 
-You can try the notebooks using Google Colab (follow the link above). You can also clone the repo, and try it locally. Most notebooks will work with any Python verson higher than 3.5, except the one on [ZTF microlensing](ztf/galactic/galactic.ipynb) which requires Python < 3.12 due to dependencies. We advise to work on a virtual environment:
+These sciences are not exhaustive and we welcome new collaborations to expand them! In addition, there are notebooks focusing on other specific aspects:
+
+- How to tune the output rate of a Fink filter? Example for the Early SN Ia candidate filter ([see notebook](extragalactic/tuning_snia_output_rate.ipynb))
+
+You can try the notebooks using Google Colab (follow the link above). You can also clone the repo, and try it locally. Most notebooks will work with any Python verson higher than 3.5, except the one on [microlensing](galactic/galactic.ipynb) which requires Python < 3.12 due to dependencies. We advise to work on a virtual environment:
 
 ```
 python -m venv myenv
