@@ -1,0 +1,21 @@
+# Numeric
+pandas<3.0.0
+numpy
+astropy
+
+# Visualisation
+matplotlib
+
+# Core
+ruff
+requests
+
+# Notebooks
+jupyter
+jupyterlab
+jupyterlab_myst
+ipympl
+
+# Phase curve & period estimation
+space-phunk
+nifty_ls
