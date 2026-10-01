@@ -35,5 +35,3 @@ source venv/bin/activate
 pip install -r requirements.txt
 jupyter-lab
 ```
-
-If you are using Python 3.14, you might not be able to install `space-phunk` which relies on old version of `pydantic` not supported. You can comment it out for the moment, only the last notebook relies on it.
