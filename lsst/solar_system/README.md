@@ -9,7 +9,13 @@ These tutorials have been given during the [LSST@EUROPE 8](https://lsst-europe8.
 
 ## Running the notebooks
 
-Python 3.10+ is recommended. We suggest to use `jupyter-lab` in a Python virtual environment:
+Clone this repository using a shallow clone to reduce the volume of data to transfer:
+
+```bash
+git clone --depth 1 --single-branch --branch=main git@github.com:astrolabsoftware/fink-tutorials.git
+```
+
+Python 3.10 to 3.13 is recommended to run the notebooks. We suggest to use `jupyter-lab` in a Python virtual environment:
 
 ```bash
 # Assuming you are on Linux
@@ -19,3 +25,5 @@ source venv/bin/activate
 pip install -r requirements.txt
 jupyter-lab
 ```
+
+If you are using Python 3.14, you might not be able to install `space-phunk` which relies on old version of `pydantic` not supported. You can comment it out for the moment, only the last notebook relies on it.
