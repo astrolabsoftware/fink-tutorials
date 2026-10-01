@@ -15,6 +15,16 @@ Clone this repository using a shallow clone to reduce the volume of data to tran
 git clone --depth 1 --single-branch --branch=main git@github.com:astrolabsoftware/fink-tutorials.git
 ```
 
+Or you can only clone the relevant folder:
+
+```bash
+git clone --no-checkout --depth=1 --filter=tree:0 https://github.com/astrolabsoftware/fink-tutorials.git
+cd fink-tutorials
+git sparse-checkout set --no-cone /lsst/solar_system
+git checkout
+cd lsst/solar_system
+```
+
 Python 3.10 to 3.13 is recommended to run the notebooks. We suggest to use `jupyter-lab` in a Python virtual environment:
 
 ```bash
