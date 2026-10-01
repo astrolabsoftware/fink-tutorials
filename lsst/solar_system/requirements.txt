@@ -17,5 +17,5 @@ jupyterlab_myst
 ipympl
 
 # Phase curve & period estimation
-space-phunk
+git+https://github.com/JulienPeloton/phunk.git@b7eff175efae27e843b05d111d5af4ac4a29a187
 nifty_ls
