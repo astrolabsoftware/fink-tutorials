@@ -1,0 +1,5 @@
+
+fink-client==2.8 # 
+numpy==2.5.1 # 
+pandas==2.3.3 # 
+lasair
